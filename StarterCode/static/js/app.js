@@ -31,7 +31,7 @@ function runEnter() {
 
   // Add in the table data
   var tbody = d3.select("tbody");
-
+  tbody.html("");
   filteredData.forEach((sighting) => {
     var row = tbody.append("tr");
     Object.entries(sighting).forEach(([key, value]) => {
