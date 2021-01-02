@@ -30,7 +30,9 @@ function runEnter() {
   console.log(filteredData);
 
   // Add in the table data
-  tableData.forEach((sighting) => {
+  var tbody = d3.select("tbody");
+
+  filteredData.forEach((sighting) => {
     var row = tbody.append("tr");
     Object.entries(sighting).forEach(([key, value]) => {
       var cell = row.append("td");
