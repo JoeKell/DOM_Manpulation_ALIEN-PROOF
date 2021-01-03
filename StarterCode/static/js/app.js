@@ -27,19 +27,19 @@ function runEnter() {
   }
   if (inputValueCity === ""){}
   else {
-    var filteredData = tableData.filter(value => value.city === inputValueCity);    
+    var filteredData = filteredData.filter(value => value.city === inputValueCity);    
   }
   if (inputValueState === ""){}
   else {
-    var filteredData = tableData.filter(value => value.state === inputValueState);    
+    var filteredData = filteredData.filter(value => value.state === inputValueState);    
   }
   if (inputValueCountry === ""){}
   else {
-    var filteredData = tableData.filter(value => value.country === inputValueCountry);    
+    var filteredData = filteredData.filter(value => value.country === inputValueCountry);    
   }
   if (inputValueShape === ""){}
   else {
-    var filteredData = tableData.filter(value => value.shape === inputValueShape);    
+    var filteredData = filteredData.filter(value => value.shape === inputValueShape);    
   }
 
   console.log(filteredData);
