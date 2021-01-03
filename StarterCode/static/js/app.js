@@ -1,15 +1,8 @@
 // from data.js
 var tableData = data;
 
-// Select the button
-var button = d3.select("#filter-btn");
-
-// Select the form
-var form = d3.select("#form");
-
-// Create event handlers 
-button.on("click", runEnter);
-form.on("submit",runEnter);
+// Create event handler
+d3.select("#filter-btn").on("click", runEnter);
 
 // Complete the event handler function for the form
 function runEnter() {
