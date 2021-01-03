@@ -19,26 +19,35 @@ function runEnter() {
   var inputValueShape = d3.select("#shape").property("value");
 
   // Filter the data 
-  var filteredData = tableData.filter(value => value.datetime === inputValueDate)
-  .filter(value => value.city === inputValueCity)  
-  .filter(value => value.state === inputValueState)
-  .filter(value => value.country === inputValueCountry)
-  .filter(value => value.shape === inputValueShape);
-  
-//   // This is to account for a blank input field
-//   if (inputValueData === "" ){
-//     var finalData = tableData;
-//   }
-//   else {
-//     var finalData = filteredData;
-//   }
+  if (inputValueDate === ""){
+      var filteredData= tableData;
+  }
+  else{
+    var filteredData = tableData.filter(value => value.datetime === inputValueDate);
+  }
+  if (inputValueCity === ""){}
+  else {
+    var filteredData = tableData.filter(value => value.city === inputValueCity);    
+  }
+  if (inputValueState === ""){}
+  else {
+    var filteredData = tableData.filter(value => value.state === inputValueState);    
+  }
+  if (inputValueCountry === ""){}
+  else {
+    var filteredData = tableData.filter(value => value.country === inputValueCountry);    
+  }
+  if (inputValueShape === ""){}
+  else {
+    var filteredData = tableData.filter(value => value.shape === inputValueShape);    
+  }
 
   console.log(filteredData);
 
   // Add in the table data
   var tbody = d3.select("tbody");
   tbody.html("");
-  finalData.forEach((sighting) => {
+  filteredData.forEach((sighting) => {
     var row = tbody.append("tr");
     Object.entries(sighting).forEach(([key, value]) => {
       var cell = row.append("td");
