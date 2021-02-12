@@ -13,22 +13,20 @@ After scrolling down, you can click "Filter Table" without entering any of the f
 
 ![All Data View](FinalImages/AllData.PNG)
 
-Add more here!!!
+To view sightings from a particular date, city, state, county, or shape, enter the desired results in the appropriate fields and then click "Filter Table"!
 
 ## Tools
 These are the tools, techniques, and resources used in this project.
 
-* D3 is used in combination with Javascript to generate the interactive plot
+* Javascript is used to filter to the appropriate data upon click of the filter button
 
 * HTML is used for the framework of the page
 
 * Github Pages is used to host the data and final application
 
-* The data is stored in csv format and imported in
-
 ### About the Data
 
-This data comes from the US Census.
+Alien sighting data was provided for the challenge without a source, it was likely generated.
 
 ## Project Steps
 
