@@ -1,5 +1,3 @@
-[View my GitHub Portfolio](https://joekell.github.io/)
-
 # JavaScript DOM Challenge - Provide Proof of Aliens
 
 ## Summary
