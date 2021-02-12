@@ -9,7 +9,6 @@ function runEnter() {
 
   // Prevent the page from refreshing
   d3.event.preventDefault();
-  
 
   // Get the value property of the input element
   var inputValueDate = d3.select("#datetime").property("value");
@@ -42,7 +41,7 @@ function runEnter() {
     var filteredData = filteredData.filter(value => value.shape === inputValueShape);    
   }
 
-  console.log(filteredData);
+  // console.log(filteredData);
 
   // Add in the table data
   var tbody = d3.select("tbody");
