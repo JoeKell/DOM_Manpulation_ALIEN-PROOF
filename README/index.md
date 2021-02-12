@@ -9,11 +9,11 @@ In this project, I built a website to display information about alien sightings 
 ### Using the Final Application
 The application can be reached at <https://joekell.github.io/D3InteractiveScatterPlot/> and is hosted on Github Pages. When opening the page no data shows at first.
 
-![Opening the Site](FinalImages/SiteLoad.PNG)
+![Opening the Site](../FinalImages/SiteLoad.PNG)
 
 After scrolling down, you can click "Filter Table" without entering any of the filters to view all data.
 
-![All Data View](FinalImages/AllData.PNG)
+![All Data View](../FinalImages/AllData.PNG)
 
 To view sightings from a particular date, city, state, county, or shape, enter the desired results in the appropriate fields and then click "Filter Table"!
 
@@ -35,7 +35,7 @@ Alien sighting data was provided for the challenge without a source, it was like
 ### Step 1: Filter Button
 After loading the data in from the data.js file, the only step of this code is to call the event handler function. The function then does all of the work.
 
-![Event Handler Code](FinalImages/EventHandlerCode.PNG)
+![Event Handler Code](../FinalImages/EventHandlerCode.PNG)
 
 ### Step 2: Filter the Data
 
@@ -43,10 +43,10 @@ The first step in the function is to determine if the user wants any filters app
 
 Then, through a series of if statements that check if a variable is empty, the data is filtered to only include values that were specified.
 
-![Filter Code](FinalImages/FilterCode.PNG)
+![Filter Code](../FinalImages/FilterCode.PNG)
 
 ### Step 3: Create the Table
 
 The table is built using a forEach statement on the filtered data.
 
-![Table Code](FinalImages/TableCode.PNG)
+![Table Code](../FinalImages/TableCode.PNG)
